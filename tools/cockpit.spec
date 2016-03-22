@@ -350,8 +350,8 @@ Requires: subscription-manager >= 1.13
 Provides: %{name}-networkmanager = %{version}-%{release}
 Requires: NetworkManager
 %ifarch x86_64 armv7hl
-Provides: %{name}-docker = %{version}-%{release}
-Requires: docker >= 1.3.0
+Provides: %{name}-docker-engine = %{version}-%{release}
+Requires: docker-engine >= 1.3.0
 %endif
 %endif
 Provides: %{name}-assets
